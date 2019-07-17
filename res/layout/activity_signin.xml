@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_login"
+    tools:context=".Signin"
+    tools:layout_editor_absoluteY="25dp">
+
+    <EditText
+        android:id="@+id/signinmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="49dp"
+        android:background="@drawable/corner_set"
+        android:ems="10"
+        android:hint="Enter registered mailid"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:paddingLeft="30dp"
+        android:textColorHint="#afb6c0"
+        app:layout_constraintBottom_toTopOf="@+id/signinpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_name"
+        tools:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/signinpassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/corner_set"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:paddingLeft="30dp"
+        android:textColor="@android:color/black"
+        android:textColorLink="#afb6c0"
+        app:layout_constraintBottom_toTopOf="@+id/signinbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signinmail" />
+
+    <Button
+        android:id="@+id/signinbutton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="164dp"
+        android:background="@drawable/mybutton"
+        android:text="Sign-In"
+        app:layout_constraintBottom_toTopOf="@+id/signuplink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signinpassword" />
+
+    <TextView
+        android:id="@+id/signuplink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="16dp"
+        android:text="Not have an Account? click here to sign-up!!"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signinbutton" />
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="158dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_new" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="78dp"
+        android:fontFamily="@font/atomic_age"
+        android:text="Locamatic"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/white"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/signinmail"
+        app:layout_constraintEnd_toEndOf="@+id/app_logo"
+        app:layout_constraintTop_toBottomOf="@+id/app_logo" />
+</android.support.constraint.ConstraintLayout>

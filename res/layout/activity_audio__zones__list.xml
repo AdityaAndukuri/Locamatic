@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AUDIO_ZONES_LIST">
+
+    <ListView
+        android:id="@+id/ListViewAudioZones"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:divider="@android:color/transparent"
+
+        android:dividerHeight="30.0sp"
+        android:padding="20dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@drawable/custom_shape"
+        tools:bottomLeftRadius="50dp"
+        tools:bottomRightRadius="50dp"
+        tools:layout_margin="20dp"
+        tools:topLeftRadius="50dp"
+        tools:topRightRadius="50dp" />
+
+</android.support.constraint.ConstraintLayout>

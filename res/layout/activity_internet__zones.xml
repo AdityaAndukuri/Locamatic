@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".INTERNET_ZONES">
+
+    <Button
+        android:id="@+id/new_int_zone"
+        android:layout_width="155dp"
+        android:layout_height="102dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:text="ADD NEW-ZONE"
+        android:background="@drawable/mybutton"/>
+
+    <Button
+        android:id="@+id/exist_int_zones"
+        android:layout_width="146dp"
+        android:layout_height="105dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="124dp"
+        android:text="EXISTING ZONES"
+        android:background="@drawable/mybutton"/>
+</RelativeLayout>
